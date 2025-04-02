@@ -1,19 +1,105 @@
-/* Variáveis CSS */
-:root {
-    --bitcoin-orange: #f7931a;
-    --dark-bg: #121212;
-}
-
+/* Reset e Base */
 body {
-    background-color: var(--dark-bg);
-    font-family: 'Segoe UI', sans-serif;
-}
-
-#jogarBtn {
-    background-color: var(--bitcoin-orange);
-    transition: transform 0.3s ease;
-}
-
-#jogarBtn:hover {
-    transform: scale(1.05);
-}
+    background-color: #000000; /* Preto sólido */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  /* Container Principal */
+  .container {
+    background: radial-gradient(
+      circle at center,
+      rgba(247, 147, 26, 0.1) 0%,
+      rgba(0, 0, 0, 1) 70%
+    );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Tipografia */
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Orbitron:wght@700&display=swap');
+  
+  .content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    color: #f7931a;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(247, 147, 26, 0.7);
+  }
+  
+  .content p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Botão */
+  button {
+    background: linear-gradient(145deg, #f7931a, #ffaa00);
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(247, 147, 26, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(247, 147, 26, 0.6);
+  }
+  
+  /* Resultados */
+  #resultado {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 30px;
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #f7931a;
+    max-width: 500px;
+  }
+  
+  .bitcoin-reward {
+    color: #f7931a;
+    font-weight: bold;
+    font-size: 1.8rem;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; text-shadow: 0 0 10px rgba(247, 147, 26, 0.7); }
+    100% { opacity: 0.8; }
+  }
+  
+  /* Footer */
+  footer {
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 50px;
+    color: #777;
+    font-size: 1rem;
+    text-align: center;
+  }
