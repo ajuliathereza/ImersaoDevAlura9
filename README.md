@@ -1,5 +1,6 @@
 # ImersaoDevAlura9
-Criando jogos, aprendendo programação e dando o próximo passo na carreira.
+
+
 BITCOIN MINER GAME 
 
 # 🪙 Bitcoin Miner Game

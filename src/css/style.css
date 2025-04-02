@@ -1,0 +1,19 @@
+/* Variáveis CSS */
+:root {
+    --bitcoin-orange: #f7931a;
+    --dark-bg: #121212;
+}
+
+body {
+    background-color: var(--dark-bg);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#jogarBtn {
+    background-color: var(--bitcoin-orange);
+    transition: transform 0.3s ease;
+}
+
+#jogarBtn:hover {
+    transform: scale(1.05);
+}
